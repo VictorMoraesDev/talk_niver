@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convite Aniversario</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -13,11 +14,65 @@
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                A comemoração do meu Aniversario será <br> 03d 12h 20m 15s
+                A comemoração do meu Aniversario será <br> <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Chacara Renascer - Orest Ungaro - Sumaré
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>O que levar</b>
+                        Kit churrasco
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        03/12/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--food">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint illo quisquam debitis totam nemo, quae nobis natus quam explicabo eveniet iste mollitia modi aliquid repellendus magnam dolor voluptate, corrupti officia.
+                </p>
+            </div>
+            <img class="event__image" src="./images/imagemcomida.webp" alt="Comida">
+        </div>
+    </section>
+    <section class="event event--music event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Música</h2>
+                <p class="event__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint illo quisquam debitis totam nemo, quae nobis natus quam explicabo eveniet iste mollitia modi aliquid repellendus magnam dolor voluptate, corrupti officia.
+                </p>
+            </div>
+            <img class="event__image" src="./images/imagemusica.webp" alt="Musica">
+        </div>
+    </section>
+    <section class="event event--fun">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Diversão</h2>
+                <p class="event__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint illo quisquam debitis totam nemo, quae nobis natus quam explicabo eveniet iste mollitia modi aliquid repellendus magnam dolor voluptate, corrupti officia.
+                </p>
+            </div>
+            <img class="event__image" src="./images/poolparty.jpeg" alt="fun">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
